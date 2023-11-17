@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test 1 - C++</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .question p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .submit-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test 1 - C++</h1>
+    <form id="testForm" action="cccc.php" method="POST">
+    <div id="timer">30:00</div>
+   
+
+        <div class="question">
+            <p>1. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+                
+int main() {
+    int x = 5;
+    cout &lt;&lt; ++x << endl;
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q1" value="a"> a. 5</label>
+            <label><input type="radio" name="q1" value="b"> b. 6</label>
+            <label><input type="radio" name="q1" value="c"> c. 4</label>
+            <label><input type="radio" name="q1" value="d"> d. Compilation error</label>
+        </div>
+        
+        <div class="question">
+            <p>2. Which of the following is not a fundamental data type in C++?</p>
+            <label><input type="radio" name="q2" value="a"> a. int</label>
+            <label><input type="radio" name="q2" value="b"> b. float</label>
+            <label><input type="radio" name="q2" value="c"> c. string</label>
+            <label><input type="radio" name="q2" value="d"> d. bool</label>
+        </div>
+        
+        <div class="question">
+            <p>3. What is the correct way to define a class in C++?</p>
+            <label><input type="radio" name="q3" value="a"> a. class MyClass</label>
+            <label><input type="radio" name="q3" value="b"> b. MyClass class</label>
+            <label><input type="radio" name="q3" value="c"> c. MyClass</label>
+            <label><input type="radio" name="q3" value="d"> d. class</label>
+        </div>
+        
+        <div class="question">
+            <p>4. What is the purpose of a constructor in C++?</p>
+            <label><input type="radio" name="q4" value="a"> a. To destroy an object</label>
+            <label><input type="radio" name="q4" value="b"> b. To allocate memory for an object</label>
+            <label><input type="radio" name="q4" value="c"> c. To access the member variables of a class</label>
+            <label><input type="radio" name="q4" value="d"> d. To initialize an object</label>
+        </div>
+        
+        <div class="question">
+            <p>5. Which keyword is used to create an object of a class in C++?</p>
+            <label><input type="radio" name="q5" value="a"> a. object</label>
+            <label><input type="radio" name="q5" value="b"> b. create</label>
+            <label><input type="radio" name="q5" value="c"> c. new</label>
+            <label><input type="radio" name="q5" value="d"> d. make</label>
+        </div>
+        
+        <div class="question">
+            <p>6. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+void printMessage() {
+    cout &lt;&lt; "Hello, World!" << endl;
+}
+
+int main() {
+    printMessage();
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q6" value="a"> a. Hello, World!</label>
+            <label><input type="radio" name="q6" value="b"> b. 0</label>
+            <label><input type="radio" name="q6" value="c"> c. 1</label>
+            <label><input type="radio" name="q6" value="d"> d. Compilation error</label>
+        </div>
+        
+        <div class="question">
+            <p>7. What is the purpose of function overloading in C++?</p>
+            <label><input type="radio" name="q7" value="a"> a. To define multiple functions with the same name but different return types</label>
+            <label><input type="radio" name="q7" value="b"> b. To define multiple functions with the same name but different parameter types</label>
+            <label><input type="radio" name="q7" value="c"> c. To define multiple functions with the same name but different access modifiers</label>
+            <label><input type="radio" name="q7" value="d"> d. To define multiple functions with the same name but in different classes</label>
+        </div>
+        
+        <div class="question">
+            <p>8. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int addNumbers(int x, int y) {
+    return x + y;
+}
+
+int addNumbers(int x, int y, int z) {
+    return x + y + z;
+}
+
+int main() {
+    cout &lt;&lt; addNumbers(2, 3) << endl;
+    cout &lt;&lt; addNumbers(2, 3, 4) << endl;
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q8" value="a"> a. 2 5</label>
+            <label><input type="radio" name="q8" value="b"> b. 5 9</label>
+            <label><input type="radio" name="q8" value="c"> c. 5 2</label>
+            <label><input type="radio" name="q8" value="d"> d. Compilation error</label>
+        </div>
+        
+        <div class="question">
+            <p>9. What is the keyword used to deallocate memory in C++?</p>
+            <label><input type="radio" name="q9" value="a"> a. free</label>
+            <label><input type="radio" name="q9" value="b"> b. delete</label>
+            <label><input type="radio" name="q9" value="c"> c. remove</label>
+            <label><input type="radio" name="q9" value="d"> d. deallocate</label>
+        </div>
+        
+        <div class="question">
+            <p>10. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x = 10;
+    int y = 5;
+    int z = x % y;
+    cout &lt;&lt; z << endl;
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q10" value="a"> a. 2</label>
+            <label><input type="radio" name="q10" value="b"> b. 5</label>
+            <label><input type="radio" name="q10" value="c"> c. 0</label>
+            <label><input type="radio" name="q10" value="d"> d. Compilation error</label>
+        </div>
+        
+        <div class="question">
+            <p>11. Which of the following is a valid way to declare a pointer in C++?</p>
+            <label><input type="radio" name="q11" value="a"> a. int *ptr;</label>
+            <label><input type="radio" name="q11" value="b"> b. int ptr;</label>
+            <label><input type="radio" name="q11" value="c"> c. ptr int;</label>
+            <label><input type="radio" name="q11" value="d"> d. *int ptr;</label>
+        </div>
+        
+        <div class="question">
+            <p>12. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class MyClass {
+public:
+    MyClass() {
+        cout &lt;&lt; "Constructor called" << endl;
+    }
+    ~MyClass() {
+        cout &lt;&lt; "Destructor called" << endl;
+    }
+};
+
+int main() {
+    MyClass obj;
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q12" value="a"> a. Constructor called</label>
+            <label><input type="radio" name="q12" value="b"> b. Destructor called</label>
+            <label><input type="radio" name="q12" value="c"> c. Constructor called Destructor called</label>
+            <label><input type="radio" name="q12" value="d"> d. Destructor called Constructor called</label>
+        </div>
+        
+        <div class="question">
+            <p>13. Which of the following is an example of an input/output stream in C++?</p>
+            <label><input type="radio" name="q13" value="a"> a. cin</label>
+            <label><input type="radio" name="q13" value="b"> b. int</label>
+            <label><input type="radio" name="q13" value="c"> c. for</label>
+            <label><input type="radio" name="q13" value="d"> d. void</label>
+        </div>
+        
+        <div class="question">
+            <p>14. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x = 5;
+    int y = 10;
+    if (x == 5 && y == 10) {
+        cout &lt;&lt; "Condition is true" << endl;
+    } else {
+        cout &lt;&lt; "Condition is false" << endl;
+    }
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q14" value="a"> a. Condition is true</label>
+            <label><input type="radio" name="q14" value="b"> b. Condition is false</label>
+            <label><input type="radio" name="q14" value="c"> c. Compilation error</label>
+            <label><input type="radio" name="q14" value="d"> d. Runtime error</label>
+        </div>
+        
+        <div class="question">
+            <p>15. Which of the following is used to access the member variables and functions of an object in C++?</p>
+            <label><input type="radio" name="q15" value="a"> a. .</label>
+            <label><input type="radio" name="q15" value="b"> b. *</label>
+            <label><input type="radio" name="q15" value="c"> c. -></label>
+            <label><input type="radio" name="q15" value="d"> d. :</label>
+        </div>
+        
+        <div class="question">
+            <p>16. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x = 5;
+    int y = 2;
+    cout &lt;&lt; (x > y ? "x is greater" : "y is greater") << endl;
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q16" value="a"> a. x is greater</label>
+            <label><input type="radio" name="q16" value="b"> b. y is greater</label>
+            <label><input type="radio" name="q16" value="c"> c. 5</label>
+            <label><input type="radio" name="q16" value="d"> d. 2</label>
+        </div>
+        
+        <div class="question">
+            <p>17. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int i = 0;
+    while (i < 5) {
+        cout &lt;&lt; i << " ";
+        i++;
+    }
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q17" value="a"> a. 0 1 2 3 4</label>
+            <label><input type="radio" name="q17" value="b"> b. 1 2 3 4 5</label>
+            <label><input type="radio" name="q17" value="c"> c. 0 1 2 3</label>
+            <label><input type="radio" name="q17" value="d"> d. 1 2 3 4</label>
+        </div>
+        
+        <div class="question">
+            <p>18. Which of the following is the correct way to create a dynamic array in C++?</p>
+            <label><input type="radio" name="q18" value="a"> a. int arr[10];</label>
+            <label><input type="radio" name="q18" value="b"> b. int *arr = new int[10];</label>
+            <label><input type="radio" name="q18" value="c"> c. int arr = new int[10];</label>
+            <label><input type="radio" name="q18" value="d"> d. int arr[] = new int[10];</label>
+        </div>
+        
+        <div class="question">
+            <p>19. What is the output of the following code snippet?</p>
+            <pre>
+                <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x = 5;
+    int y = 10;
+    int z;
+    z = (x > y) ? x : y;
+    cout &lt;&lt; z << endl;
+    return 0;
+}
+                </code>
+            </pre>
+            <label><input type="radio" name="q19" value="a"> a. 5</label>
+            <label><input type="radio" name="q19" value="b"> b. 10</label>
+            <label><input type="radio" name="q19" value="c"> c. Compilation error</label>
+            <label><input type="radio" name="q19" value="d"> d. Runtime error</label>
+        </div>
+        
+        <div class="question">
+            <p>20. Which of the following is not a looping statement in C++?</p>
+            <label><input type="radio" name="q20" value="a"> a. for</label>
+            <label><input type="radio" name="q20" value="b"> b. while</label>
+            <label><input type="radio" name="q20" value="c"> c. do-while</label>
+            <label><input type="radio" name="q20" value="d"> d. loop</label>
+        </div>
+        
+        <div class="submit-button">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+     <script>
+  // Set the timer duration in seconds
+  var timerDuration = 1800;
+
+  // Get the timer element
+  var timerElement = document.getElementById('timer');
+
+  // Start the timer
+  function startTimer() {
+    var timer = setInterval(function() {
+      // Calculate minutes and seconds
+      var minutes = Math.floor(timerDuration / 60);
+      var seconds = timerDuration % 60;
+
+      // Add leading zeros if necessary
+      minutes = String(minutes).padStart(2, '0');
+      seconds = String(seconds).padStart(2, '0');
+
+      // Display the remaining time
+      timerElement.textContent = minutes + ':' + seconds;
+
+      // Decrease the timer duration
+      timerDuration--;
+
+      // Check if the timer has reached zero
+      if (timerDuration < 0) {
+        // Automatically submit the form
+        document.getElementById('quiz-form').submit();
+
+        // Clear the timer
+        clearInterval(timer);
+      }
+    }, 1000);
+  }
+
+  // Start the timer when the page loads
+  window.onload = startTimer;
+</script>
+</body>
+</html>
+

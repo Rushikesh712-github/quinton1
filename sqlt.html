@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MySQL MCQ Test</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    #timer {
+        font-weight: bold;
+    }
+</style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var timeLeft = 1800; // 30 minutes in seconds
+            var timer = setInterval(countdown, 1000);
+
+            function countdown() {
+                var minutes = Math.floor(timeLeft / 60);
+                var seconds = timeLeft % 60;
+
+                document.getElementById('timer').innerHTML = minutes + 'm ' + seconds + 's';
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    document.getElementById('testForm').submit();
+                }
+
+                timeLeft--;
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>MySQL MCQ Test</h1>
+    <form id="testForm" action="resultsqlt.php" method="post">
+        <!-- Question 1 -->
+        <h3>1. What is the purpose of the "GROUP BY" clause in MySQL?</h3>
+        <input type="radio" name="q1" value="a"> a) It specifies the order of the result set.<br>
+        <input type="radio" name="q1" value="b"> b) It filters the rows returned by a query.<br>
+        <input type="radio" name="q1" value="c"> c) It groups the rows based on a specific column or columns.<br>
+        <input type="radio" name="q1" value="d"> d) It joins multiple tables together.<br>
+        <br>
+
+        <!-- Question 2 -->
+        <h3>2. Which MySQL statement is used to insert new records into a table?</h3>
+        <input type="radio" name="q2" value="a"> a) SELECT<br>
+        <input type="radio" name="q2" value="b"> b) UPDATE<br>
+        <input type="radio" name="q2" value="c"> c) DELETE<br>
+        <input type="radio" name="q2" value="d"> d) INSERT<br>
+        <br>
+
+        <!-- Question 3 -->
+        <h3>3. What does the SQL keyword "DISTINCT" do in a SELECT statement?</h3>
+        <input type="radio" name="q3" value="a"> a) It sorts the result set in ascending order.<br>
+        <input type="radio" name="q3" value="b"> b) It filters the rows based on a condition.<br>
+        <input type="radio" name="q3" value="c"> c) It returns only unique values in the result set.<br>
+        <input type="radio" name="q3" value="d"> d) It joins multiple tables together.<br>
+        <br>
+
+        <!-- Question 4 -->
+        <h3>4. Which MySQL function is used to find the number of rows in a table?</h3>
+        <input type="radio" name="q4" value="a"> a) COUNT()<br>
+        <input type="radio" name="q4" value="b"> b) SUM()<br>
+        <input type="radio" name="q4" value="c"> c) AVG()<br>
+        <input type="radio" name="q4" value="d"> d) MAX()<br>
+        <br>
+
+        <!-- Question 5 -->
+        <h3>5. What does the SQL keyword "JOIN" do in a SELECT statement?</h3>
+        <input type="radio" name="q5" value="a"> a) It combines rows from two or more tables based on a related column between them.<br>
+        <input type="radio" name="q5" value="b"> b) It filters the rows based on a condition.<br>
+        <input type="radio" name="q5" value="c"> c) It groups the rows based on a specific column or columns.<br>
+        <input type="radio" name="q5" value="d"> d) It sorts the result set in ascending order.<br>
+        <br>
+
+        <!-- Question 6 -->
+        <h3>6. What is the purpose of the SQL keyword "HAVING"?</h3>
+        <input type="radio" name="q6" value="a"> a) It specifies the order of the result set.<br>
+        <input type="radio" name="q6" value="b"> b) It filters the rows returned by a query.<br>
+        <input type="radio" name="q6" value="c"> c) It groups the rows based on a specific column or columns.<br>
+        <input type="radio" name="q6" value="d"> d) It filters the grouped rows based on a condition.<br>
+        <br>
+
+        <!-- Question 7 -->
+        <h3>7. Which MySQL statement is used to update existing records in a table?</h3>
+        <input type="radio" name="q7" value="a"> a) SELECT<br>
+        <input type="radio" name="q7" value="b"> b) INSERT<br>
+        <input type="radio" name="q7" value="c"> c) DELETE<br>
+        <input type="radio" name="q7" value="d"> d) UPDATE<br>
+        <br>
+
+        <!-- Question 8 -->
+        <h3>8. What is the default value of the AUTO_INCREMENT column in MySQL?</h3>
+        <input type="radio" name="q8" value="a"> a) 0<br>
+        <input type="radio" name="q8" value="b"> b) 1<br>
+        <input type="radio" name="q8" value="c"> c) NULL<br>
+        <input type="radio" name="q8" value="d"> d) -1<br>
+        <br>
+
+        <!-- Question 9 -->
+        <h3>9. What is the purpose of the SQL keyword "ORDER BY"?</h3>
+        <input type="radio" name="q9" value="a"> a) It specifies the order of the result set.<br>
+        <input type="radio" name="q9" value="b"> b) It filters the rows based on a condition.<br>
+        <input type="radio" name="q9" value="c"> c) It groups the rows based on a specific column or columns.<br>
+        <input type="radio" name="q9" value="d"> d) It joins multiple tables together.<br>
+        <br>
+
+        <!-- Question 10 -->
+        <h3>10. Which MySQL statement is used to delete records from a table?</h3>
+        <input type="radio" name="q10" value="a"> a) SELECT<br>
+        <input type="radio" name="q10" value="b"> b) INSERT<br>
+        <input type="radio" name="q10" value="c"> c) DELETE<br>
+        <input type="radio" name="q10" value="d"> d) UPDATE<br>
+        <br>
+
+        <!-- Question 11 -->
+        <h3>11. What does the SQL keyword "LIKE" do in a WHERE clause?</h3>
+        <input type="radio" name="q11" value="a"> a) It compares two values for equality.<br>
+        <input type="radio" name="q11" value="b"> b) It checks if a value is NULL.<br>
+        <input type="radio" name="q11" value="c"> c) It filters the rows based on a pattern match.<br>
+        <input type="radio" name="q11" value="d"> d) It performs a mathematical calculation.<br>
+        <br>
+
+        <!-- Question 12 -->
+        <h3>12. Which MySQL data type should be used to store a date and time value?</h3>
+        <input type="radio" name="q12" value="a"> a) INT<br>
+        <input type="radio" name="q12" value="b"> b) VARCHAR<br>
+        <input type="radio" name="q12" value="c"> c) DATE<br>
+        <input type="radio" name="q12" value="d"> d) FLOAT<br>
+        <br>
+
+        <!-- Question 13 -->
+        <h3>13. What does the SQL keyword "NULL" represent?</h3>
+        <input type="radio" name="q13" value="a"> a) A missing or unknown value.<br>
+        <input type="radio" name="q13" value="b"> b) Zero or empty string.<br>
+        <input type="radio" name="q13" value="c"> c) A value that cannot be changed.<br>
+        <input type="radio" name="q13" value="d"> d) A value that is assigned automatically.<br>
+        <br>
+
+        <!-- Question 14 -->
+        <h3>14. What does the SQL keyword "AS" do in a SELECT statement?</h3>
+        <input type="radio" name="q14" value="a"> a) It specifies the order of the result set.<br>
+        <input type="radio" name="q14" value="b"> b) It filters the rows returned by a query.<br>
+        <input type="radio" name="q14" value="c"> c) It assigns an alias to a column or table.<br>
+        <input type="radio" name="q14" value="d"> d) It performs a mathematical calculation.<br>
+        <br>
+
+        <!-- Question 15 -->
+        <h3>15. Which MySQL statement is used to create a new database?</h3>
+        <input type="radio" name="q15" value="a"> a) SELECT<br>
+        <input type="radio" name="q15" value="b"> b) INSERT<br>
+        <input type="radio" name="q15" value="c"> c) DELETE<br>
+        <input type="radio" name="q15" value="d"> d) CREATE DATABASE<br>
+        <br>
+
+        <!-- Question 16 -->
+        <h3>16. What is the purpose of the SQL keyword "LIMIT"?</h3>
+        <input type="radio" name="q16" value="a"> a) It specifies the order of the result set.<br>
+        <input type="radio" name="q16" value="b"> b) It filters the rows based on a condition.<br>
+        <input type="radio" name="q16" value="c"> c) It groups the rows based on a specific column or columns.<br>
+        <input type="radio" name="q16" value="d"> d) It limits the number of rows returned by a query.<br>
+        <br>
+
+        <!-- Question 17 -->
+        <h3>17. Which MySQL statement is used to add a new column to an existing table?</h3>
+        <input type="radio" name="q17" value="a"> a) SELECT<br>
+        <input type="radio" name="q17" value="b"> b) INSERT<br>
+        <input type="radio" name="q17" value="c"> c) ALTER TABLE<br>
+        <input type="radio" name="q17" value="d"> d) UPDATE<br>
+        <br>
+
+        <!-- Question 18 -->
+        <h3>18. What does the SQL keyword "UNION" do in a SELECT statement?</h3>
+        <input type="radio" name="q18" value="a"> a) It combines the result sets of two or more SELECT statements.<br>
+        <input type="radio" name="q18" value="b"> b) It filters the rows based on a condition.<br>
+        <input type="radio" name="q18" value="c"> c) It groups the rows based on a specific column or columns.<br>
+        <input type="radio" name="q18" value="d"> d) It performs a mathematical calculation.<br>
+        <br>
+
+        <!-- Question 19 -->
+        <h3>19. What is the purpose of the SQL keyword "BETWEEN"?</h3>
+        <input type="radio" name="q19" value="a"> a) It specifies the order of the result set.<br>
+        <input type="radio" name="q19" value="b"> b) It filters the rows based on a condition.<br>
+        <input type="radio" name="q19" value="c"> c) It groups the rows based on a specific column or columns.<br>
+        <input type="radio" name="q19" value="d"> d) It performs a pattern match.<br>
+        <br>
+
+        <!-- Question 20 -->
+        <h3>20. Which MySQL statement is used to remove a table from the database?</h3>
+        <input type="radio" name="q20" value="a"> a) SELECT<br>
+        <input type="radio" name="q20" value="b"> b) INSERT<br>
+        <input type="radio" name="q20" value="c"> c) DELETE<br>
+        <input type="radio" name="q20" value="d"> d) DROP TABLE<br>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <p>Time left: <span id="timer"></span></p>
+</body>
+</html>
+
